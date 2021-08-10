@@ -13,6 +13,10 @@ const homebtn = document.querySelector('.brend');
 const disconect=document.querySelector('.fa-chevron-down');
 const modelpostbtn = document.querySelector('.model-header button');
 const  modelinput = document.querySelector('.model-input');
+const  userr = document.querySelector('.user');
+const  sidebar = document.querySelector('.sidebar');
+const  sidebarbody = document.querySelector('.sidebar-body');
+const  xBtn = document.querySelector('.sidebar-header i');
 //--------------------------------------------------------
 //Main Page
 
@@ -21,9 +25,14 @@ const goToLoginPage = () => {
     loginPage.style.display = 'grid';
 };
 
-disconect.addEventListener('click', () => {
-    newsFeedPage.style.display = 'none';
-    mainPage.style.display = 'grid';
+userr.addEventListener('click', ()=>{
+    sidebar.classList.add('sidebar-display');
+    sidebarbody.classList.add('sidebar-body-display');
+});
+
+xBtn.addEventListener('click', ()=>{
+    sidebar.classList.remove('sidebar-display');
+    sidebarbody.classList.remove('sidebar-body-display');
 });
 
 homebtn.addEventListener('click', () => {
