@@ -17,8 +17,15 @@ const  userr = document.querySelector('.user');
 const  sidebar = document.querySelector('.sidebar');
 const  sidebarbody = document.querySelector('.sidebar-body');
 const  xBtn = document.querySelector('.sidebar-header i');
+const  logout = document.querySelector('.logout');
 //--------------------------------------------------------
-//Main Page
+
+
+logout.addEventListener('click', () => {
+
+    newsFeedPage.style.display = 'none';
+    loginPage.style.display = 'grid';
+});
 
 const goToLoginPage = () => {
     mainPage.style.display = 'none';
