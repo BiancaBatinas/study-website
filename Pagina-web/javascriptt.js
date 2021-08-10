@@ -25,6 +25,8 @@ logout.addEventListener('click', () => {
 
     newsFeedPage.style.display = 'none';
     loginPage.style.display = 'grid';
+    sidebar.classList.remove('sidebar-display');
+    sidebarbody.classList.remove('sidebar-body-display');
 });
 
 const goToLoginPage = () => {
